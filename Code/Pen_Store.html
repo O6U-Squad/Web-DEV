@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" /> <!--content Encoding-->
+    <meta name="description" content="Scientif tools store" />
+    <title>Pen Store</title>
+    <link rel="stylesheet" href="../Pen_CSS/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="top"></a>
+    <div class="heading">
+        <h1 class="header">Pen Store</h1>
+        <p class="hock">
+            Store to sell electronic components
+        </p>
+        <label for="sign">Sign UP</label>
+        <form id="sign">
+            <div>
+                <label for="un">Username</label>
+                <input id="un" type="text" name="un" required />
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input id="mail" type="email" name="mail" required value="@gmail.com" />
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input id="pass" type="password" name="pass" required minlength="8" maxlength="16" />
+            </div>
+            <div>
+                <label for="add">Address</label>
+                <input id="add" type="text" name="add" required />
+            </div>
+            <div>
+                <label for="con">Country</label>
+                <select name="Country" id="con">
+                    <optgroup label="Africa">
+                        <option value="" disabled selected>Select country</option>
+                        <option value="1">Egypt</option>
+                        <option value="2">Algeria</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="1">UAE</option>
+                        <option value="2">Qatar</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="1">US</option>
+                        <option value="2">Canada</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="1">England</option>
+                        <option value="2">France</option>
+                    </optgroup>
+                </select>
+            </div>
+            <input type="submit" value="Sumbit" />
+            <input type="reset" value="Reset" />
+        </form>
+    </div>
+    <hr />
+    <div class="circuits">
+        <h2>Bulided Circuits</h2>
+        <div class="Pn">
+            <h3>
+                Pn Junction Circuit
+                <mark>Ideal Diode</mark>
+            </h3>
+            <br />
+            <img class="PN_img" src="../images/PN-junction-diode.jpg" alt="Not found" />
+            <h4>Components</h4>
+            <ul>
+                <li>
+                    P-Type junction impuritised with B
+                    <sub>5</sub>
+                </li>
+                <li>
+                    N-Type junction impuritised with Sb
+                    <sub>51</sub>
+                </li>
+            </ul>
+            <a class="link" href="https://www.youtube.com/watch?v=STLPgPOThoY" target="_blank">Click here for more information</a>
+            <br />
+            <span class="Dis1">Price: <del>120$</del></span>
+            <span class="p1">100$</span>
+            <form>
+                <label for="order1">Order</label>
+                <input id="order1" type="number" name="Pn_orders" min="0" step="1" value="0" />
+                <input type="submit" />
+            </form>
+        </div>
+        <div class="Half">
+            <h3>Half wave recitifier Circuit</h3>
+            <br />
+            <img class="Half_img" src="../images/Gemini_Half.png" alt="Not found" />
+            <h4>Components</h4>
+            <ul>
+                <li>VCC</li>
+                <li> Simple Transformer</li>
+                <li>One ideal diode</li>
+                <li>Load resistor 1K&ohm; </li>
+            </ul>
+            <a class="link" href="https://www.youtube.com/watch?v=o-Rya9KZYY4" target="_blank">Click here for more informatiom</a>
+            <br />
+            <span class="Dis2">Price: <del>100$</del></span>
+            <span class="p2">80$</span>
+            <form>
+                <label for="order2">Order</label>
+                <input id="order2" type="number" name="Half_orders" min="0" step="1" value="0" />
+                <input type="submit" value="Sumbit" />
+                <br />
+            </form>
+        </div>
+        <div class="Diode">
+            <h3>Zener Diode circuit</h3>
+            <br />
+            <img class="Diode_img" src="../images/Zendiode_.jpg" alt="Not found" />
+            <h4>Components</h4>
+            <ul>
+                <li>emetter</li>
+                <li>base</li>
+                <li>collecter</li>
+            </ul>
+            <a class="link" href="https://www.youtube.com/watch?v=mmiHX_IzvDw" target="_blank">Click here for more informatiom</a>
+            <br />
+            <span class="Dis3">Price: <del>200$</del></span>
+            <span class="p3">170$</span>
+            <form>
+                <label for="order3">Order</label>
+                <input id="order3" type="number" name="Diode_orders" min="0" step="1" value="0" />
+                <input type="submit" value="Sumbit" />
+                <br />
+            </form>
+        </div>
+        <div class="clear"></div>
+        <div class="social">
+            <p>Contact Us</p>
+            <a class="EMail" href="mailto:mahmoudelagmy187@gmail.com" title="Mail" target="_blank">
+                <img class="fac" src="../images/mail_35.png" alt="Not found" />
+            </a>
+            <a class="Fac" href="https://facebook.com/Mahmoud Elagmy" title="Visit Facebook group" target="_blank">
+                <img class="fac" src="../images/facebook-35.png" alt="Not found" />
+            </a>
+        </div>
+        <a href="#top" id="backtop">↑Top</a>
+    </div>
+</body>
+</html>
