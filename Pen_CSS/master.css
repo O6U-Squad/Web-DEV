@@ -44,10 +44,6 @@ h2, h3, h4 {
 }
 
 .circuits {
-    background-image: url("../images/electro.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     margin-top: -24px;
 }
 
