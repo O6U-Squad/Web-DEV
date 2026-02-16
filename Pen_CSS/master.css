@@ -123,6 +123,7 @@ a {
 
 input[type="submit"], input[type="reset"] {
     cursor: pointer;
+    transition: transform 0.3s;
 }
 
     input[type="submit"]:hover,
@@ -130,16 +131,12 @@ input[type="submit"], input[type="reset"] {
         border: 3px solid #6d0303;
         border-radius: 8px;
         color: #6d0303;
+        transform: scale(1.1);
     }
 
 .social {
     text-align: center;
 }
-
-    .social .fac img {
-        width: 35px;
-        height: 35px;
-    }
 
     .social p {
         color: #000000;
