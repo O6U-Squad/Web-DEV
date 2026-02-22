@@ -21,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -36,6 +36,14 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Notes.txt",
@@ -45,7 +53,8 @@
               "RelativeToolTip": "..\\Notes.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-27T04:28:23.943Z"
+              "WhenOpened": "2026-01-27T04:28:23.943Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -55,7 +64,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAowIkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-02-16T20:47:42.09Z",
               "EditorCaption": ""
@@ -68,7 +77,7 @@
               "RelativeDocumentMoniker": "Pen_CSS\\master.css",
               "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\Pen_CSS\\master.css",
               "RelativeToolTip": "Pen_CSS\\master.css",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAqwI4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwDkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-01-21T16:55:35.155Z",
               "EditorCaption": ""

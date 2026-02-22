@@ -3,15 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|c:\\users\\mahmo\\documents\\front_end\\pen website\\pen_html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|solutionrelative:pen_html\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\pen_css\\master.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|solutionrelative:pen_css\\master.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mahmo\\Documents\\Front_end\\.vs\\Front_end\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|c:\\users\\mahmo\\documents\\front_end\\pen website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95C2B624-FD39-F868-28CF-988D931EB38A}|C:\\Users\\mahmo\\Documents\\Front_end\\Pen website|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mahmo\\Documents\\Front_end\\Notes.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
@@ -24,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,20 +36,16 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\mahmo\\Documents\\Front_end\\.vs\\Front_end\\index.html",
-              "RelativeDocumentMoniker": "..\\.vs\\Front_end\\index.html",
-              "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\.vs\\Front_end\\index.html",
-              "RelativeToolTip": "..\\.vs\\Front_end\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-01-21T16:55:15.002Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Notes.txt",
               "DocumentMoniker": "C:\\Users\\mahmo\\Documents\\Front_end\\Notes.txt",
               "RelativeDocumentMoniker": "..\\Notes.txt",
@@ -60,30 +53,31 @@
               "RelativeToolTip": "..\\Notes.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-01-27T04:28:23.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\Pen_html\\index.html",
-              "RelativeDocumentMoniker": "Pen_html\\index.html",
-              "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\Pen_html\\index.html",
-              "RelativeToolTip": "Pen_html\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-01-21T16:55:29.962Z",
+              "WhenOpened": "2026-01-27T04:28:23.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-16T20:47:42.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "master.css",
               "DocumentMoniker": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\Pen_CSS\\master.css",
               "RelativeDocumentMoniker": "Pen_CSS\\master.css",
               "ToolTip": "C:\\Users\\mahmo\\Documents\\Front_end\\Pen website\\Pen_CSS\\master.css",
               "RelativeToolTip": "Pen_CSS\\master.css",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAYwDkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-01-21T16:55:35.155Z",
               "EditorCaption": ""
