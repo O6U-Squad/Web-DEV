@@ -31,6 +31,7 @@
             <div>
                 <label for="add">address</label>
                 <input id="add" type="text" name="add" required />
+                <i class="bi bi-truck"></i>
             </div>
             <div>
                 <label for="con">country</label>
@@ -54,8 +55,8 @@
                     </optgroup>
                 </select>
             </div>
-            <input type="submit" value="Create Account" />
             <input type="reset" value="Sign In" />
+            <input type="submit" value="Create Account" />
         </form>
     </div>
     <hr />
@@ -80,8 +81,10 @@
             </ul>
             <a class="link" href="https://www.youtube.com/watch?v=STLPgPOThoY" target="_blank">detalis</a>
             <br />
-            <span class="price">price: <del>120$</del></span>
-            <span class="dis">100$</span>
+            <div class="price-row">
+                <span class="price">price: <del>120$</del></span>
+                <span class="dis">100$</span>
+            </div>
             <form>
                 <label for="order1">order</label>
                 <input id="order1" type="number" name="Pn_orders" min="0" step="1" value="0" />
@@ -100,8 +103,10 @@
             </ul>
             <a class="link" href="https://www.youtube.com/watch?v=o-Rya9KZYY4" target="_blank">details</a>
             <br />
-            <span class="price">price: <del>100$</del></span>
-            <span class="dis">80$</span>
+            <div class="price-row">
+                <span class="price">price: <del>100$</del></span>
+                <span class="dis">80$</span>
+            </div>
             <form>
                 <label for="order2">order</label>
                 <input id="order2" type="number" name="Half_orders" min="0" step="1" value="0" />
@@ -118,16 +123,16 @@
             </ul>
             <a class="link" href="https://www.youtube.com/watch?v=mmiHX_IzvDw" target="_blank">details</a>
             <br />
-            <span class="price">price: <del>200$</del></span>
-            <span class="dis">170$</span>
+            <div class="price-row">
+                <span class="price">price: <del>200$</del></span>
+                <span class="dis">170$</span>
+            </div>
             <form>
                 <label for="order3">order</label>
                 <input id="order3" type="number" name="Diode_orders" min="0" step="1" value="0" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
-        <div class="clear"></div>
-        <hr />
         <div class="transistors">
             <h2>transistors</h2>
             <div class="bjt">
@@ -141,8 +146,10 @@
                 </ul>
                 <a class="link" href="https://www.electronics-tutorials.ws/transistor/tran_1.html" target="_blank">details</a>
                 <br />
-                <span class="price">price:<del>150$</del></span>
-                <span class="dis">130$</span>
+                <div class="price-row">
+                    <span class="price">price:<del>150$</del></span>
+                    <span class="dis">130$</span>
+                </div>
                 <form>
                     <label for="order4">order</label>
                     <input id="order4" type="number" name="bjt_orders" min="0" step="1" value="0" />
@@ -160,8 +167,10 @@
                 </ul>
                 <a class="link" href="https://www.electronicsforu.com/technology-trends/learn-electronics/mosfet-basics-working-applications" target="_blank">details</a>
                 <br />
-                <span class="price">price:<del>180$</del></span>
-                <span class="dis">170$</span>
+                <div class="price-row">
+                    <span class="price">price:<del>180$</del></span>
+                    <span class="dis">170$</span>
+                </div>
                 <form>
                     <label for="order5">order</label>
                     <input id="order5" type="number" name="mosfet_orders" min="0" step="1" value="0" />
@@ -171,11 +180,14 @@
             <div class="clear"></div>
             <div class="social">
                 <p>support</p>
-                <a href="mailto:mahmoudelagmy187@gmail.com" title="Mail" class="contact-icon">
+                <a href="mailto:mahmoudelagmy187@gmail.com" title="Mail" class="contact-icon" target="_blank">
                     <i class="bi bi-envelope-at-fill"></i>
                 </a>
-                <a href="https://facebook.com/Mahmoud%20Elagmy" title="Visit Facebook group" class="contact-icon">
+                <a href="https://facebook.com/Mahmoud%20Elagmy" title="Visit Facebook group" class="contact-icon" target="_blank">
                     <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/011" title="Chat on Whatsapp" class="contact-icon" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
                 </a>
             </div>
             <a href="#top" id="backtop">↑top</a>
