@@ -8,6 +8,7 @@ body {
     background-size: cover;
     text-transform: capitalize;
     color: #b0c7df;
+    font-size: 18px;
 }
 
 * {
@@ -65,22 +66,19 @@ label[for="con"] {
 }
 
 hr {
-    border: solid 2px #000;
+    border: solid 2px #c47800;
 }
 
-.circuits h2 {
+h2, h3, h4 {
     text-align: center;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
-.circuits {
+.circuits, transistors {
     margin-top: -24px;
 }
-
-    .circuits h3 {
-        text-align: center;
-    }
 
 .Pn,
 .Half,
@@ -89,6 +87,23 @@ hr {
     float: left;
     width: calc((100% - 335px) / 3);
     margin-left: 90px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #1c2e41;
+    box-shadow: 6px 4.5px 6px 2.5px #000;
+    box-sizing: border-box;
+}
+
+.bjt,
+.mosfet {
+    display: inline-block;
+    float: left;
+    width: calc((100% - 700px) / 2);
+    margin-left: 230px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     border-radius: 7px;
     position: relative;
     background-color: #1c2e41;
@@ -102,7 +117,9 @@ hr {
 
 .PN_img,
 .Half_img,
-.Diode_img {
+.Diode_img,
+.bjt_img,
+.mosfet_img {
     border: 4px solid #000;
     border-radius: 8px;
     width: 100%;
@@ -124,14 +141,21 @@ a {
 }
 
     a:hover {
-        color: #2c3e50;
+        color: #c47800;
     }
 
 .link {
     padding-right: 20px;
     margin-left: 24px;
+    display: inline-block;
     position: relative;
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out, color 0.4s ease-in-out;
 }
+
+    .link:hover {
+        transform: scale(1.1);
+    }
 
     .link::before {
         content: "";
@@ -147,11 +171,6 @@ a {
         border-width: 5px 0 5px 11px; /* arrow shape */
         border-left-color: #000; /* arrow color */
     }
-
-h4 {
-    text-align: center;
-    margin-top: 20px;
-}
 
 ul {
     list-style-type: square;
@@ -194,7 +213,9 @@ input[type="number"] {
 }
 
 label[for="order1"],
-label[for="order2"], label[for="order3"] {
+label[for="order2"], label[for="order3"],
+label[for="order4"],
+label[for="order5"] {
     margin-left: 6px;
     font-weight: bold;
     font-size: 18px;
@@ -211,13 +232,27 @@ label[for="order2"], label[for="order3"] {
     margin: 0 4px;
 }
 
-.bi-envelope-at-fill {
-    color: red;
-}
+    .contact-icon .bi-envelope-at-fill {
+        color: red;
+        display: inline-block;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+    }
 
-.bi-facebook {
-    color: #3b5998;
-}
+    .contact-icon:hover .bi-envelope-at-fill {
+        transform: scale(1.5);
+    }
+
+    .contact-icon .bi-facebook {
+        color: #011dbe;
+        display: inline-block;
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-icon:hover .bi-facebook {
+        transform: scale(1.5);
+    }
 
 #backtop {
     position: fixed;
