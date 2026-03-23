@@ -19,6 +19,7 @@
     <div class="sign_up">
         <form id="signUp" action="index.html">
             <div class="Updata">
+                <h1>sign up</h1>
                 <div class="user-data">
                     <input id="un" type="text" name="un" required />
                     <label for="un">username</label>
@@ -48,13 +49,18 @@
                     </select>
                 </div>
                 <div class="pass-data">
-                    <input id="pass" type="password" name="pass" required minlength="8" maxlength="16" />
+                    <input type="checkbox" id="eye-toggle" class="eye-checkbox">
+                    <input id="pass" type="text" class="sec-pass" name="pass" required minlength="8" maxlength="16" />
                     <label for="pass">password</label>
+                    <label for="eye-toggle" class="eye-btn">
+                        <i class="bi bi-eye open-eye"></i>
+                        <i class="bi bi-eye-slash closed-eye"></i>
+                    </label>
                 </div>
-            </div>
-            <div class="signUp-icon">
-                <input type="submit" value="Sign Up" />
-                <i class="bi bi-person-plus-fill"></i>
+                <div class="signUp-icon">
+                    <input type="submit" value="Create Account" />
+                    <i class="bi bi-person-plus-fill"></i>
+                </div>
             </div>
         </form>
     </div>

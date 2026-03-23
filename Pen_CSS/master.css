@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    --br_radius: 6px;
+    --br_radius: 8px;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
     text-transform: capitalize;
     color: #778da9;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 * {
@@ -57,6 +58,13 @@ body {
 }
 
 /* Sign In and Sign Up pages */
+.data h1,
+.Updata h1 {
+    font-size: 35px;
+    color: #e5e5e5;
+    opacity: 0.8;
+}
+
 .sign_in,
 .sign_up {
     position: relative;
@@ -71,32 +79,60 @@ body {
 
 .data,
 .Updata {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
     font-size: 20px;
-    background-color: #1c2e41;
-    padding: 40px;
+    margin-top: 15px;
+    background: linear-gradient(180deg, #2c3e50 0%, #1a1a1a 100%);
+    border: 1px solid #333338;
+    padding: 50px;
     border-radius: var(--br_radius);
-    box-shadow: 6px 4.5px 6px 2.5px #000;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
 }
+
+/* THE MAGIC GLOW LAYER */
+.data::before,
+.Updata::before {
+    content: "";
+    /* Required for pseudo-elements to show up */
+
+    /* Position it dead center behind the card */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(180deg, rgba(12, 15, 73, 0.4) 0%, rgba(73, 50, 125, 0.2) 100%);
+    filter: blur(70px);
+    z-index: -1;
+    /* Place it behind the card */
+    pointer-events: none;
+}
+
 
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-    padding: 8px 12px;
-    background-color: #e5e5e5;
-    border: solid 2px #14213d;
-    border-radius: var(--br_radius);
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #1C1C1F;
+    border: 1px solid #333338;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease-out;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
-input[type="email"]:focus {
+input[type="email"]:focus,
+.eye-checkbox:checked~input[type="password"] {
     border-color: #fca311;
 }
 
@@ -107,6 +143,7 @@ input[type="email"]:focus {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%
 }
 
 /* Style ALL floating labels */
@@ -118,20 +155,63 @@ label[for="mail"] {
     top: 8px;
     font-size: 16px;
     pointer-events: none;
-    transition: all 0.3s ease-out;
+    transition: transform 0.3s ease-out, border-color 0.3s ease-out;
 }
 
 
 input[type="text"]:focus+label[for="un"],
 input[type="text"]:valid+label[for="un"],
-input[type="password"]:focus+label[for="pass"],
-input[type="password"]:valid+label[for="pass"],
+input[type="text"]:focus+label[for="pass"],
+input[type="text"]:valid+label[for="pass"],
 input[type="email"]:focus+label[for="mail"],
-input[type="email"]:valid+label[for="mail"] {
-    transform: translateY(-22px) scale(0.88);
-    color: #778da9;
+input[type="email"]:valid+label[for="mail"],
+.eye-checkbox:checked~label[for="pass"] {
+    transform: translateY(-22px) scale(0.95);
+    border-color: #6B88FF;
 }
 
+.eye-checkbox {
+    display: none;
+}
+
+.sec-pass {
+    /* This forces a regular text box to show password dots! */
+    -webkit-text-security: disc;
+    padding-right: 40px;
+    /* Space for the icon */
+}
+
+/* When the checkbox is checked, remove the dots so they can read it! */
+.eye-checkbox:checked~.sec-pass {
+    -webkit-text-security: none;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    color: #fca311;
+    font-size: 20px;
+    transition: color 0.3s ease-out;
+    z-index: 20;
+}
+
+.eye-btn:hover {
+    color: #6B88FF;
+}
+
+.closed-eye {
+    display: none;
+}
+
+.eye-checkbox:checked~.eye-btn .open-eye {
+    display: none;
+}
+
+.eye-checkbox:checked~.eye-btn .closed-eye {
+    display: inline-block;
+}
 
 .country {
     width: 100%;
@@ -167,8 +247,9 @@ input[type="email"]:valid+label[for="mail"] {
 }
 
 input[type="submit"] {
-    font-size: 18px;
-    padding: 8px 12px;
+    width: 300px;
+    font-size: 20px;
+    padding: 5px 10px;
     background-color: #14213d;
     color: #778da9;
     outline: none;
@@ -189,7 +270,7 @@ input[type="submit"]:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .bi-lightning-charge,
