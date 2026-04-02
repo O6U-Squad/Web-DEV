@@ -3,21 +3,50 @@ html {
 }
 
 :root {
-    --br_radius: 8px;
+    --radius: 8px;
+    --page-bg-start: #2c3e50;
+    --page-bg-end: #1a1a1a;
+    --page-bg-surface: #fafafa;
+    --text-secondary: #778da9;
+    --text-light: #e5e5e5;
+    --text-white: #ffffff;
+    --text-black: #000000;
+    --card-bg: #1c2e41;
+    --input-bg: #1c1c1f;
+    --select-bg: #e5e5e5;
+    --button-bg: #14213d;
+    --border-dark: #333338;
+    --border-black: #000000;
+    --accent: #fca311;
+    --accent-dark: #b07314;
+    --accent-warning: #ff9800;
+    --accent-soft: #6B88FF;
+    --text-secondary-light: #8da2b5;
+    --text-muted: #5d748a;
+    --glow-start: rgba(12, 15, 73, 0.4);
+    --glow-end: rgba(73, 50, 125, 0.2);
+    --social-red: #ff0000;
+    --social-blue: #011dbe;
+    --social-green: #097016;
+    --backtop-bg: #094c8f;
+    --backtop-border: #5ea5ef;
+    --backtop-shadow: #113d69;
+    --backtop-hover-bg: #1a2a3a;
 }
 
 body {
-    font-family: "Sansation";
+    font-family: "Orbitron";
     font-weight: bold;
-    background: linear-gradient(to bottom, #2c3e50, #1a1a1a);
+    background: linear-gradient(to bottom, var(--page-bg-start), var(--page-bg-end));
     background-repeat: no-repeat;
-    background-color: #fafafa;
+    background-color: var(--page-bg-surface);
     background-attachment: fixed;
     background-size: cover;
     text-transform: capitalize;
-    color: #778da9;
+    color: var(--text-secondary);
     overflow-x: hidden;
     box-sizing: border-box;
+    letter-spacing: 2px;
 }
 
 * {
@@ -26,8 +55,8 @@ body {
 }
 
 ::selection {
-    background-color: #14213d;
-    color: #fca311;
+    background-color: var(--button-bg);
+    color: var(--accent);
 }
 
 /* Sign In and Sign Up home pages */
@@ -37,16 +66,16 @@ body {
     left: 20px;
     display: flex;
     gap: 15px;
-    background-color: #14213d;
+    background-color: var(--button-bg);
     padding: 10px 20px;
-    border: solid 2px #778da9;
+    border: solid 2px var(--text-secondary);
     outline: none;
-    border-radius: var(--br_radius);
+    border-radius: var(--radius);
     box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sign {
-    color: #778da9;
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -54,14 +83,14 @@ body {
 }
 
 .sign:hover {
-    color: #fca311;
+    color: var(--accent);
 }
 
 /* Sign In and Sign Up pages */
 .data h1,
 .Updata h1 {
     font-size: 35px;
-    color: #e5e5e5;
+    color: var(--text-light);
     opacity: 0.8;
 }
 
@@ -87,10 +116,10 @@ body {
     gap: 40px;
     font-size: 20px;
     margin-top: 15px;
-    background: linear-gradient(180deg, #2c3e50 0%, #1a1a1a 100%);
-    border: 1px solid #333338;
+    background: linear-gradient(180deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
+    border: 1px solid var(--border-dark);
     padding: 50px;
-    border-radius: var(--br_radius);
+    border-radius: var(--radius);
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
 }
 
@@ -107,7 +136,7 @@ body {
     transform: translate(-50%, -50%);
     width: 120%;
     height: 120%;
-    background: linear-gradient(180deg, rgba(12, 15, 73, 0.4) 0%, rgba(73, 50, 125, 0.2) 100%);
+    background: linear-gradient(180deg, var(--glow-start) 0%, var(--glow-end) 100%);
     filter: blur(70px);
     z-index: -1;
     /* Place it behind the card */
@@ -120,10 +149,10 @@ input[type="password"],
 input[type="email"] {
     width: 100%;
     padding: 12px 15px;
-    background-color: #1C1C1F;
-    border: 1px solid #333338;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-dark);
     border-radius: 8px;
-    color: #ffffff;
+    color: var(--text-white);
     font-size: 16px;
     outline: none;
     transition: border-color 0.3s ease-out;
@@ -133,7 +162,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
 .eye-checkbox:checked~input[type="password"] {
-    border-color: #fca311;
+    border-color: var(--accent);
 }
 
 .user-data,
@@ -166,8 +195,9 @@ input[type="text"]:valid+label[for="pass"],
 input[type="email"]:focus+label[for="mail"],
 input[type="email"]:valid+label[for="mail"],
 .eye-checkbox:checked~label[for="pass"] {
-    transform: translateY(-22px) scale(0.95);
-    border-color: #6B88FF;
+    transform: translateY(-25px) scale(0.98);
+    color: var(--accent);
+    border-color: var(--accent-soft);
 }
 
 .eye-checkbox {
@@ -191,14 +221,14 @@ input[type="email"]:valid+label[for="mail"],
     right: 10px;
     top: 10px;
     cursor: pointer;
-    color: #fca311;
+    color: var(--accent);
     font-size: 20px;
     transition: color 0.3s ease-out;
     z-index: 20;
 }
 
 .eye-btn:hover {
-    color: #6B88FF;
+    color: var(--accent-soft);
 }
 
 .closed-eye {
@@ -220,48 +250,48 @@ input[type="email"]:valid+label[for="mail"],
 .country select {
     width: 100%;
     padding: 10px 12px;
-    background-color: #e5e5e5;
-    border: solid 2px #14213d;
-    border-radius: var(--br_radius);
+    background-color: var(--select-bg);
+    border: solid 2px var(--button-bg);
+    border-radius: var(--radius);
     outline: none;
     font-size: 16px;
-    color: #14213d;
+    color: var(--button-bg);
     font-weight: bold;
     cursor: pointer;
     transition: border-color 0.3s ease-out;
 }
 
 .country select:focus {
-    border-color: #fca311;
+    border-color: var(--accent);
 }
 
 
 .country optgroup {
-    background-color: #14213d;
-    color: #fca311;
+    background-color: var(--button-bg);
+    color: var(--accent);
 }
 
 .country option {
-    background-color: #1c2e41;
-    color: #E5E5E5;
+    background-color: var(--card-bg);
+    color: var(--text-light);
 }
 
 input[type="submit"] {
     width: 300px;
     font-size: 20px;
     padding: 5px 10px;
-    background-color: #14213d;
-    color: #778da9;
+    background-color: var(--button-bg);
+    color: var(--text-secondary);
     outline: none;
-    border: solid 2px #778da9;
-    border-radius: var(--br_radius);
+    border: solid 2px var(--text-secondary);
+    border-radius: var(--radius);
     cursor: pointer;
     transition: color 0.3s ease-out, transform 0.3s ease-out;
 }
 
 input[type="submit"]:hover {
-    color: #fca311;
-    transform: scale(1.1);
+    color: var(--accent);
+    transform: scale(1.05);
 }
 
 .signIn-icon,
@@ -273,41 +303,64 @@ input[type="submit"]:hover {
     gap: 15px;
 }
 
-.bi-lightning-charge,
+.fa-circle-user,
 .bi-person-plus-fill {
     font-size: 20px;
-    color: #e5e5e5;
+    color: var(--text-light);
 }
 
-input:hover+.bi-lightning-charge,
+input:hover+.fa-circle-user,
 input:hover+.bi-person-plus-fill {
-    color: #fca311;
+    color: var(--accent);
 }
 
 /* 1. The Containers (Parent) */
 .heading {
-    text-transform: uppercase;
     text-align: center;
     padding: 10px 10px;
 }
 
 
 .header {
-    letter-spacing: 1.5px;
-    font-size: 50px;
-    text-align: center;
-    background: linear-gradient(to bottom, #000000, #14213d 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.header h1 {
+    background: linear-gradient(to bottom, var(--text-black), var(--button-bg) 70%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.header .fa-lightbulb {
+    color: var(--button-bg);
+    font-size: 28px;
+}
+
+.header:hover {
+    transform: scale(1.05);
+}
+
+.header:hover .fa-lightbulb {
+    color: #FFD700;
+    filter: drop-shadow(0 0 15px #FFD700);
+    transform: rotate(15deg) scale(1.1);
+}
+
 
 .heading p {
     word-spacing: 2px;
 }
 
 hr {
-    border: solid 2px #b07314;
+    border: solid 2px var(--accent-dark);
     margin-bottom: 27px;
     margin-top: 10px;
 }
@@ -320,6 +373,22 @@ h4 {
     margin-top: 15px;
     margin-bottom: 10px;
 }
+
+h2 {
+    font-size: 28px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(2, 0, 28);
+    transition: all 0.3s ease-out;
+}
+
+h2:hover {
+    -webkit-text-stroke: 2px transparent;
+    background: linear-gradient(to left, var(--text-secondary) 40%, var(--accent-dark) 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* 1. The Containers (Parent) */
 .circuits,
@@ -337,6 +406,7 @@ h4 {
     margin-bottom: 50px;
 }
 
+
 .Pn,
 .Half,
 .Diode,
@@ -344,13 +414,24 @@ h4 {
 .mosfet {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: min(100%, 380px);
     /* Responsive: shrinks on mobile, max 380px on desktop */
-    background-color: #1c2e41;
-    border-radius: var(--br_radius);
-    box-shadow: 6px 4.5px 6px 2.5px #000;
-    padding: 10px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 6px 4.5px 5px 2.5px var(--text-black);
+    padding: 20px;
     box-sizing: border-box;
+    transition: transform 0.4s ease-out;
+}
+
+.Pn:hover,
+.Half:hover,
+.Diode:hover,
+.bjt:hover,
+.mosfet:hover {
+    transform: translateY(-10px);
+    box-shadow: 6px 4.5px 15px 1.5px var(--accent-dark);
 }
 
 
@@ -364,23 +445,23 @@ h4 {
     /* Consistent height for all product photos */
     object-fit: cover;
     /* Crops the image perfectly without stretching */
-    border-radius: var(--br_radius);
-    border: 2px solid #000;
+    border-radius: var(--radius);
+    border: 2px solid var(--text-black);
     margin-bottom: 15px;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-black);
 }
 
 a:hover {
-    color: #ff9800;
+    color: var(--accent-warning);
 }
 
 .link {
     display: flex;
-    align-items: flex-start;
+    align-self: flex-start;
     margin-left: 20px;
     position: relative;
     transform: scale(1);
@@ -398,13 +479,13 @@ a:hover {
     height: 0;
     right: 0;
     top: 50%;
-    left: -13px;
+    left: -14px;
     margin-top: -5px;
     background-color: transparent;
     border: solid transparent;
     border-width: 5px 0 5px 11px;
     /* arrow shape */
-    border-left-color: #000;
+    border-left-color: var(--text-black);
     /* arrow color */
 }
 
@@ -417,7 +498,7 @@ ul {
 .price-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-self: flex-start;
     gap: 10px;
     margin-left: 8px;
 }
@@ -441,12 +522,18 @@ del {
 
 input[type="number"] {
     width: 30%;
-    height: 25px;
+    height: 30px;
     padding: 5px 5px;
     margin: 5px;
     border: solid 2px #000;
-    border-radius: var(--br_radius);
+    border-radius: var(--radius);
     outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    opacity: 1;
+    height: 25px;
+    width: 20px;
 }
 
 label[for="order1"],
@@ -492,17 +579,17 @@ label[for="order5"] {
 
 
 .mail-icon .bi-envelope {
-    color: red;
+    color: var(--social-red);
     display: inline-block;
 }
 
 .facebook-icon .bi-facebook {
-    color: #011dbe;
+    color: var(--social-blue);
     display: inline-block;
 }
 
 .whatsapp-icon .bi-whatsapp {
-    color: #097016;
+    color: var(--social-green);
     display: inline-block;
 }
 
@@ -510,13 +597,13 @@ label[for="order5"] {
     position: fixed;
     left: 20px;
     bottom: 10px;
-    background: #094c8f;
+    background: var(--backtop-bg);
     padding: 12px 8px;
     min-width: 48px;
     min-height: 48px;
-    border: 1px solid #5ea5ef;
-    border-radius: var(--br_radius);
-    box-shadow: 2px 2px 8px #113d69;
+    border: 1px solid var(--backtop-border);
+    border-radius: var(--radius);
+    box-shadow: 2px 2px 8px var(--backtop-shadow);
     opacity: 0.85;
     cursor: pointer;
     transition: background 0.3s, color 0.3s, transform 0.3s;
@@ -526,19 +613,19 @@ label[for="order5"] {
 #backtop i {
     font-size: 20px;
     font-weight: bold;
-    color: #e5e5e5;
+    color: var(--text-light);
     padding: 15px;
 }
 
 #backtop:hover {
-    background: #1a2a3a;
-    box-shadow: 2px 4px 16px #1a2a3a;
+    background: var(--backtop-hover-bg);
+    box-shadow: 2px 4px 16px var(--backtop-hover-bg);
     opacity: 1;
     transform: translateY(-3px) scale(1.05);
 }
 
 #backtop:hover i {
-    color: #fca311;
+    color: var(--accent);
 }
 
 
