@@ -30,8 +30,8 @@
         </div>
     </div>
     <hr />
+    <h2>built circuits</h2>
     <div class="circuits">
-        <h2>built circuits</h2>
         <div class="Pn">
             <h3>
                 pn junction circuit
@@ -61,7 +61,7 @@
             </form>
         </div>
         <div class="Half">
-            <h3>half wave recitifier circuit</h3>
+            <h3>half wave rectifier circuit</h3>
             <img class="Half_img" src="images/Half.webp" alt="not found" />
             <h4>components</h4>
             <ul>
@@ -103,8 +103,8 @@
             </form>
         </div>
     </div>
+    <h2>transistors</h2>
     <div class="transistors">
-        <h2>transistors</h2>
         <div class="bjt">
             <h3>bjt transistor</h3>
             <img class="bjt_img" src="images/Bjt.webp" alt="not found" />
@@ -114,7 +114,8 @@
                 <li>base</li>
                 <li>collector</li>
             </ul>
-            <a class="link" href="https://www.electronics-tutorials.ws/transistor/tran_1.html"
+            <a class="link"
+                href="https://www.tutorialspoint.com/basic_electronics/basic_electronics_types_of_transistors.htm"
                 target="_blank">details</a>
             <br />
             <div class="price-row">
@@ -122,8 +123,8 @@
                 <span class="dis">170$</span>
             </div>
             <form>
-                <label for="order3">order</label>
-                <input id="order3" type="number" name="Diode_orders" min="0" step="1" value="0" />
+                <label for="order4">order</label>
+                <input id="order4" type="number" name="Diode_orders" min="0" step="1" value="0" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
@@ -137,7 +138,7 @@
                 <li>source</li>
             </ul>
             <a class="link"
-                href="https://www.electronicsforu.com/technology-trends/learn-electronics/mosfet-basics-working-applications"
+                href="https://www.tutorialspoint.com/basic_electronics/basic_electronics_types_of_transistors.htm"
                 target="_blank">details</a>
             <br />
             <div class="price-row">
@@ -145,26 +146,67 @@
                 <span class="dis">130$</span>
             </div>
             <form>
-                <label for="order4">order</label>
-                <input id="order4" type="number" name="bjt_orders" min="0" step="1" value="0" />
+                <label for="order5">order</label>
+                <input id="order5" type="number" name="bjt_orders" min="0" step="1" value="0" />
+                <input type="submit" value="Add to cart">
+            </form>
+        </div>
+        <div class="mosfet">
+            <h3>jfet transistor</h3>
+            <img class="jfet_img" src="images/Jfet.webp" alt="not found" />
+            <h4>components</h4>
+            <ul>
+                <li>drain</li>
+                <li>gate</li>
+                <li>source</li>
+            </ul>
+            <a class="link"
+                href="https://www.tutorialspoint.com/basic_electronics/basic_electronics_types_of_transistors.htm"
+                target="_blank">details</a>
+            <br />
+            <div class="price-row">
+                <span class="price">price:<del>130$</del></span>
+                <span class="dis">110$</span>
+            </div>
+            <form>
+                <label for="order6">order</label>
+                <input id="order6" type="number" name="jfet_orders" min="0" step="1" value="0" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
     </div>
     <div class="social">
-        <span>support</span>
-        <div class="icons">
-            <a href="mailto:mahmoudelagmy187@gmail.com" title="Mail" class="mail-icon" target="_blank">
-                <i class="bi bi-envelope"></i>
-            </a>
-            <a href="https://facebook.com/Mahmoud%20Elagmy" title="Visit Facebook group" class="facebook-icon"
-                target="_blank">
-                <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://wa.me/011" title="Chat on Whatsapp" class="whatsapp-icon" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-            </a>
+        <div class="contact">
+            <span>support</span>
+            <div class="icons">
+                <a href="mailto:mahmoudelagmy187@gmail.com" title="Mail" class="mail-icon" target="_blank">
+                    <i class="bi bi-envelope"></i>
+                </a>
+                <a href="https://facebook.com/Mahmoud%20Elagmy" title="Visit Facebook group" class="facebook-icon"
+                    target="_blank">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/011" title="Chat on Whatsapp" class="whatsapp-icon" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://github.com/Mahmoud-Elagmy" title="Code" class="git-icon">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
         </div>
+        <form action="https://formspree.io/f/mlgoavkl" method="post" class="message">
+            <h2>Send us a message</h2>
+            <p>we will get back to you</p>
+            <div class="mail-data">
+                <input id="mail" type="email" name="mail" required placeholder=" " />
+                <label for="mail">email</label>
+            </div>
+            <div class="message-data">
+                <label for="message">message</label>
+                <textarea id="message" name="message" cols="30" rows="10" required placeholder=" "></textarea>
+            </div>
+            <input type="submit" value="send" class="send-btn" />
+        </form>
     </div>
     <a href="#top" id="backtop"><i class="bi bi-chevron-double-up"></i></a>
 </body>
