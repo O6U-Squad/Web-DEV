@@ -4,7 +4,7 @@ html {
 
 :root {
     --radius: 8px;
-    --page-bg-start: #2c3e50;
+    --page-bg-start: rgb(44, 62, 80);
     --page-bg-end: #1a1a1a;
     --page-bg-surface: #fafafa;
     --text-secondary: #778da9;
@@ -67,7 +67,7 @@ body {
     right: 20px;
     display: flex;
     gap: 15px;
-    background-color: var(--button-bg);
+    background-color: var(--text-black);
     padding: 10px 20px;
     border: solid 2px var(--text-secondary);
     outline: none;
@@ -76,15 +76,18 @@ body {
 }
 
 .sign {
-    color: var(--text-secondary);
+    color: #090c10;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease-out;
 }
 
-.sign:hover {
+.sign a {
+    transition: all 0.4s ease-out;
+}
+
+.sign a:hover {
     color: var(--accent);
+    transform: translateY(-3px);
 }
 
 /* Sign In and Sign Up pages */
@@ -99,37 +102,64 @@ body {
 .sign_up {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
-    height: 100vh;
+    width: 100%;
+    max-width: 880px;
+    margin: 30px auto;
+    height: auto;
+    min-height: 650px;
     font-size: 20px;
+    background: linear-gradient(180deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
+    border: 1px solid var(--border-dark);
+    border-radius: var(--radius);
+    box-shadow: 5px 10px 50px 20px rgba(44, 62, 80, 0.5);
+    overflow: hidden;
+}
+
+.sign_in form,
+.sign_up form {
+    flex: 1;
+    /* Tells the right side to take 50% */
+    display: flex;
+    padding: 30px;
+}
+
+.logo {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+    background-image: url('../images/Logobg.png');
+    background-size: cover;
+}
+
+.logo img {
+    width: 66%;
+    margin-left: 60px;
+    height: 101%;
+    object-fit: contain;
 }
 
 .data,
 .Updata {
     position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
     font-size: 20px;
-    margin-top: 15px;
-    background: linear-gradient(180deg, var(--page-bg-start) 0%, var(--page-bg-end) 100%);
-    border: 1px solid var(--border-dark);
-    padding: 50px;
-    border-radius: var(--radius);
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
 }
 
 /* THE MAGIC GLOW LAYER */
 .data::before,
 .Updata::before {
     content: "";
-    /* Required for pseudo-elements to show up */
-
     /* Position it dead center behind the card */
     position: absolute;
     top: 50%;
@@ -355,7 +385,6 @@ input:hover+.bi-person-plus-fill {
     display: inline-block;
     -webkit-text-fill-color: var(--button-bg);
     color: var(--button-bg);
-    font-size: 28px;
     transition: all 0.4s ease-out;
 }
 
@@ -367,7 +396,7 @@ input:hover+.bi-person-plus-fill {
     -webkit-text-fill-color: #FFD700;
     color: #FFD700;
     filter: drop-shadow(0 0 15px #FFD700);
-    transform: rotate(15deg) scale(1.1);
+    transform: translateY(-2px) scale(1.1);
 }
 
 
@@ -400,6 +429,7 @@ h2 {
 h2:hover {
     -webkit-text-stroke: 2px transparent;
     background: linear-gradient(to left, var(--text-muted) 42%, var(--accent-warning) 58%);
+    transform: translateY(-3px);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
