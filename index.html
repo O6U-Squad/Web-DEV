@@ -56,7 +56,8 @@
             </div>
             <form>
                 <label for="order1">order</label>
-                <input id="order1" type="number" name="Pn_orders" min="0" step="1" value="0" />
+                <input id="order1" type="number" name="Pn_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
@@ -78,7 +79,8 @@
             </div>
             <form>
                 <label for="order2">order</label>
-                <input id="order2" type="number" name="Half_orders" min="0" step="1" value="0" />
+                <input id="order2" type="number" name="Half_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
@@ -98,7 +100,8 @@
             </div>
             <form>
                 <label for="order3">order</label>
-                <input id="order3" type="number" name="Diode_orders" min="0" step="1" value="0" />
+                <input id="order3" type="number" name="Diode_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
@@ -124,7 +127,8 @@
             </div>
             <form>
                 <label for="order4">order</label>
-                <input id="order4" type="number" name="Diode_orders" min="0" step="1" value="0" />
+                <input id="order4" type="number" name="Diode_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart" />
             </form>
         </div>
@@ -147,7 +151,8 @@
             </div>
             <form>
                 <label for="order5">order</label>
-                <input id="order5" type="number" name="bjt_orders" min="0" step="1" value="0" />
+                <input id="order5" type="number" name="bjt_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
@@ -170,7 +175,8 @@
             </div>
             <form>
                 <label for="order6">order</label>
-                <input id="order6" type="number" name="jfet_orders" min="0" step="1" value="0" />
+                <input id="order6" type="number" name="jfet_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
@@ -194,7 +200,8 @@
             </div>
             <form>
                 <label for="order7">order</label>
-                <input id="order7" type="number" name="bdecoder_orders" min="0" step="1" value="0" />
+                <input id="order7" type="number" name="bdecoder_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
@@ -215,7 +222,8 @@
             </div>
             <form>
                 <label for="order8">order</label>
-                <input id="order8" type="number" name="segdecoder_orders" min="0" step="1" value="0" />
+                <input id="order8" type="number" name="segdecoder_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
@@ -235,14 +243,19 @@
             </div>
             <form>
                 <label for="order9">order</label>
-                <input id="order9" type="number" name="prencoder_orders" min="0" step="1" value="0" />
+                <input id="order9" type="number" name="prencoder_orders" min="0" max="10" step="1" value="0"
+                    onkeydown="return false" />
                 <input type="submit" value="Add to cart">
             </form>
         </div>
     </div>
     <div class="social">
         <div class="contact">
-            <span>support</span>
+            <input type="checkbox" id="hidden-checkbox" class="social-checkbox">
+            <label for="hidden-checkbox" class="social-btn">
+                <span class="org-text">contact</span>
+                <span class="hover-text">click me!</span>
+            </label>
             <div class="icons">
                 <a href="mailto:mahmoudelagmy187@gmail.com" title="Mail" class="mail-icon" target="_blank">
                     <i class="bi bi-envelope"></i>
@@ -257,12 +270,17 @@
                 <a href="https://github.com/Mahmoud-Elagmy" title="Code" class="git-icon" target="_blank">
                     <i class="bi bi-github"></i>
                 </a>
+                <a href="https://www.linkedin.com/in/mahmoud-elagmy-11b1b2389/" title="Visit my Linkedin"
+                    class="linkedin-icon" target="_blank">
+                    <i class="bi bi-linkedin"></i>
+                </a>
             </div>
         </div>
         <form action="https://formspree.io/f/mlgoavkl" method="post" class="message">
             <h2>Send us a message</h2>
             <p>we will get back to you</p>
             <div class="mail-data">
+                <i class="fa-solid fa-at"></i>
                 <input id="mail" type="email" name="email" required placeholder=" " />
                 <label for="mail">email</label>
             </div>
@@ -270,7 +288,7 @@
                 <label for="message">message</label>
                 <textarea id="message" name="message" cols="30" rows="10" required placeholder=" "></textarea>
             </div>
-            <input type="submit" value="send" class="send-btn" />
+            <input type="submit" value="Send" name="message" class="send-btn" />
         </form>
     </div>
     <a href="#top" id="backtop"><i class="bi bi-chevron-double-up"></i></a>
