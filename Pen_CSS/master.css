@@ -417,6 +417,12 @@
      animation-fill-mode: forwards;
  }
 
+ .line {
+     position: relative;
+     width: 100px;
+     height: 100px;
+ }
+
  .line span {
      position: absolute;
      border-top: solid 4px yellow;
@@ -424,7 +430,7 @@
  }
 
  .line1 {
-     top: 22%;
+     top: 22px;
      left: 800px;
      transform: rotate(45deg);
      animation: line1-anim 0.5s ease-out 1;
@@ -432,7 +438,7 @@
  }
 
  .line2 {
-     top: 22%;
+     top: 22px;
      left: 804px;
      transform: rotate(90deg);
      animation: line2-anim 0.5s ease-out 1;
@@ -440,7 +446,7 @@
  }
 
  .line3 {
-     top: 22%;
+     top: 22px;
      left: 810px;
      transform: rotate(135deg);
      animation: line3-anim 0.5s ease-out 1;
@@ -462,8 +468,8 @@
 
      100% {
          width: 8px;
-         top: 20%;
-         left: 785px;
+         top: 30px;
+         left: -55px;
      }
  }
 
@@ -482,8 +488,8 @@
 
      100% {
          width: 8px;
-         top: 18.5%;
-         left: 805px;
+         top: 22px;
+         left: -38px;
      }
  }
 
@@ -502,8 +508,8 @@
 
      100% {
          width: 8px;
-         top: 20%;
-         left: 825px;
+         top: 29px;
+         left: -20px;
      }
  }
 
@@ -558,7 +564,7 @@
      height: 2px;
      border: none;
      background: linear-gradient(to right, transparent, var(--accent-warning), transparent);
-     animation: fade 2s linear;
+     animation: fade 1.5s linear;
  }
 
  @keyframes fade {
