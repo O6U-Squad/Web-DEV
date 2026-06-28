@@ -161,14 +161,12 @@
             setTimeout(() => {
                 contactCheckbox.checked = 1;
                 contact.classList.add('animate');
-                message.focus();
             }, 300);
         })
         link.addEventListener("scroll", () => {
             setTimeout(() => {
                 contactCheckbox.checked = 0;
                 contact.classList.remove('animate');
-                message.blur();
             }, 500);
         })
     </script>
