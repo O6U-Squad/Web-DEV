@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" /> <!--content Encoding-->
+    <meta name="description" content="Scientif tools store" />
+    <title>Pen Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Pen_CSS/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Righteous&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href='https://css.gg/c' rel='stylesheet'>
+</head>
+
+<body>
+    <a id="top"></a>
+    <a id="home"></a>
+    <a href="index.html" id="home"><i class="bi bi-house-fill"></i></a>
+    <div class="circuits">
+        <h1>built circuits</h1>
+        <div class="Pn">
+            <h2>
+                pn junction circuit
+            </h2>
+            <div class="content">
+                <div class="left">
+                    <img class="PN_img" src="images/Pn-img.webp" alt="not found" />
+                    <h3>components</h3>
+                    <ul class="list">
+                        <li>
+                            p-Type junction impuritised with B
+                            <sub>5</sub>
+                        </li>
+                        <li>
+                            n-Type junction impuritised with Sb
+                            <sub>51</sub>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        semiconductor eclctronical controlled circuit <span>one way valve</span> use junction of
+                        positive holes
+                        <span>P-type</span> and free electrones <span>N-type</span>
+                        junction impuritised with B<sub>5</sub> and Sb<sub>51</sub> respectively
+                        <h3>usage</h3>
+                        <ul>
+                            <li>rectification</li>
+                            <li>prtection</li>
+                        </ul>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order1">order</label>
+                            <button type="button" class="inc" id="inc1">+</button>
+                            <input id="order1" type="number" name="Pn_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec1">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc1 = document.getElementById('inc1');
+                        const dec1 = document.getElementById('dec1');
+                        const order1 = document.getElementById('order1');
+                        inc1.addEventListener('click', () => {
+                            order1.value = parseInt(order1.value) + 1;
+                        })
+                        dec1.addEventListener('click', () => {
+                            if (order1.value > 0) {
+                                order1.value = parseInt(order1.value) - 1;
+                            }
+                            else {
+                                order1.value = 0;
+                            }
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="Half">
+            <h2>half wave rectifier circuit</h2>
+            <div class="content">
+                <div class="left">
+                    <img class="Half_img" src="images/Half.webp" alt="not found" />
+                    <h4>components</h4>
+                    <ul class="list">
+                        <li>VCC</li>
+                        <li> simple transformer</li>
+                        <li>one ideal diode</li>
+                        <li>load resistor 1K&ohm; </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        <span>simplest circuit</span> to convert form AC to DC.
+                        <h3>usage</h3>
+                        <ul>
+                            <li>rectification</li>
+                        </ul>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">price: <del>100$</del></span>
+                        <span class="dis">80$</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order2">order</label>
+                            <button type="button" class="inc" id="inc2">+</button>
+                            <input id="order2" type="number" name="Half_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec2">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc2 = document.getElementById('inc2');
+                        const dec2 = document.getElementById('dec2');
+                        const order2 = document.getElementById('order2');
+                        inc2.addEventListener('click', () => {
+                            order2.value = parseInt(order2.value) + 1;
+                        })
+                        dec2.addEventListener('click', () => {
+                            if (order2.value > 0) {
+                                order2.value = parseInt(order2.value) - 1;
+                            }
+                            else {
+                                order2.value = 0;
+                            }
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="Diode">
+            <h2>zener diode circuit</h2>
+            <div class="content">
+                <div class="left">
+                    <img class="Diode_img" src="images/Zener.webp" alt="not found" />
+                    <h4>components</h4>
+                    <ul class="list">
+                        <li>cathode</li>
+                        <li>anode</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        <span>shunt down voltage regulator</span>
+                        by giving the device ability to mantain a stable vlotage across
+                        terminals when operated in its reverse region
+                        <h3>usage</h3>
+                        <ul>
+                            <li>dc voltage regulatoion</li>
+                            <li>prtection</li>
+                        </ul>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">price: <del>130$</del></span>
+                        <span class="dis">95$</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order3">order</label>
+                            <button type="button" class="inc" id="inc3">+</button>
+                            <input id="order3" type="number" name="Diode_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec3">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc3 = document.getElementById('inc3');
+                        const dec3 = document.getElementById('dec3');
+                        const order3 = document.getElementById('order3');
+                        inc3.addEventListener('click', () => {
+                            order3.value = parseInt(order3.value) + 1;
+                        })
+                        dec3.addEventListener('click', () => {
+                            if (order3.value > 0) {
+                                order3.value = parseInt(order3.value) - 1;
+                            }
+                            else {
+                                order3.value = 0;
+                            }
+                        })
+                    </script>
+                    <script>
+                        const cart = document.querySelectorAll('.submitbtn');
+                        cart.forEach((cart) => {
+                            cart.addEventListener('click', (event) => {
+                                event.preventDefault();
+                                cart.classList.add('animate');
+                                setTimeout(() => {
+                                    const formbtn = cart.closest('form');
+                                    if (formbtn) {
+                                        formbtn.submit();
+                                    }
+                                    else {
+                                        cart.classList.remove('animate');
+                                    }
+                                }, 1200);
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <a href="#top" id="backtop"><i class="bi bi-chevron-double-up"></i></a>
+</body>
+
+</html>

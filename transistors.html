@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" /> <!--content Encoding-->
+    <meta name="description" content="Scientif tools store" />
+    <title>Pen Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Pen_CSS/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Righteous&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link href='https://css.gg/c' rel='stylesheet'>
+</head>
+
+<body>
+    <a id="top"></a>
+    <a id="home"></a>
+    <a href="index.html" id="home"><i class="bi bi-house-fill"></i></a>
+    <div class="transistors">
+        <h1>transistors</h1>
+        <div class="bjt">
+            <h2>bjt transistor</h2>
+            <div class="content">
+                <div class="left">
+                    <img class="bjt_img" src="images/Bjt.webp" alt="not found" />
+                    <h3>components</h3>
+                    <ul class="list">
+                        <li>emitter</li>
+                        <li>base</li>
+                        <li>collector</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        <span>current-controlled device</span>
+                        . This means a small current entering one terminal controls
+                        a much larger current flowing between the other two
+                        terminals.
+                        <h3>usage</h3>
+                        <ul>
+                            <li>analog amplification</li>
+                            <li>temperature sensors</li>
+                        </ul>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">price: <del>180$</del></span>
+                        <span class="dis">150$</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order4">order</label>
+                            <button type="button" class="inc" id="inc4">+</button>
+                            <input id="order4" type="number" name="Diode_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec4">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc4 = document.getElementById('inc4');
+                        const dec4 = document.getElementById('dec4');
+                        const order4 = document.getElementById('order4');
+                        inc4.addEventListener('click', () => {
+                            order4.value = parseInt(order4.value) + 1;
+                        });
+                        dec4.addEventListener('click', () => {
+                            if (order4.value > 0) {
+                                order4.value = parseInt(order4.value) - 1;
+                            }
+                            else {
+                                order4.value = 0;
+                            }
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="jfet">
+            <h2>jfet transistor</h2>
+            <div class="content">
+                <div class="left">
+                    <img class="jfet_img" src="images/Jfet.webp" alt="not found" />
+                    <h3>components</h3>
+                    <ul class="list">
+                        <li>drain</li>
+                        <li>gate</li>
+                        <li>source</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        <span>voltage-controlled device</span>. It relies on an electric field to control the flow of
+                        current,
+                        meaning it
+                        draws
+                        virtually zero current at its control input.
+                        <h3>usage</h3>
+                        <ul>
+                            <li>low-noise amplifiers</li>
+                            <li>analog switche</li>
+                        </ul>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">price:<del>130$</del></span>
+                        <span class="dis">110$</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order5">order</label>
+                            <button type="button" class="inc" id="inc5">+</button>
+                            <input id="order5" type="number" name="jfet_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec5">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc5 = document.getElementById('inc5');
+                        const dec5 = document.getElementById('dec5');
+                        const order5 = document.getElementById('order5');
+                        inc5.addEventListener('click', () => {
+                            order5.value = parseInt(order5.value) + 1;
+                        })
+                        dec5.addEventListener('click', () => {
+                            if (order5.value > 0) {
+                                order5.value = parseInt(order5.value) - 1;
+                            }
+                            else {
+                                order5.value = 0;
+                            }
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="mosfet">
+            <h2>mosfet transistor</h2>
+            <div class="content">
+                <div class="left">
+                    <img class="mosfet_img" src="images/Mosfet.webp" alt="not found" />
+                    <h3>components</h3>
+                    <ul class="list">
+                        <li>drain</li>
+                        <li>gate</li>
+                        <li>source</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="description">
+                        <span>Like the JFET, a MOSFET is a voltage-controlled device</span>,
+                        but it features a highly insulating oxide layer usually <span>silicon
+                            dioxide</span> between the Gate and the conductive channel.
+                        <h3>usage</h3>
+                        <ul>
+                            <li>microprocessors and digital logic</li>
+                            <li>computer memory</li>
+                        </ul>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">price:<del>160$</del></span>
+                        <span class="dis">140$</span>
+                    </div>
+                    <form class="order-form">
+                        <div class="quantity">
+                            <label for="order6">order</label>
+                            <button type="button" class="inc" id="inc6">+</button>
+                            <input id="order6" type="number" name="bjt_orders" min="0" max="10" step="1" value="0"
+                                onkeydown="return false" />
+                            <button type="button" class="dec" id="dec6">-</button>
+                        </div>
+                        <div class="submitbtn" id="cart-container">
+                            <input type="submit" value="Add to cart" />
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                    </form>
+                    <script>
+                        const inc6 = document.getElementById("inc6");
+                        const dec6 = document.getElementById("dec6");
+                        const order6 = document.getElementById("order6");
+                        inc6.addEventListener("click", function () {
+                            order6.value = parseInt(order6.value) + 1;
+                        });
+                        dec6.addEventListener("click", function () {
+                            if (order6.value > 0) {
+                                order6.value = parseInt(order6.value) - 1;
+                            }
+                        });
+                    </script>
+                </div>
+                <script>
+                    const cart = document.querySelectorAll('.submitbtn');
+                    cart.forEach((cart) => {
+                        cart.addEventListener('click', (event) => {
+                            event.preventDefault();
+                            cart.classList.add('animate');
+                            setTimeout(() => {
+                                const formbtn = cart.closest('form');
+                                if (formbtn) {
+                                    formbtn.submit();
+                                }
+                                else {
+                                    cart.classList.remove('animate');
+                                }
+                            }, 1200);
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <a href="#top" id="backtop"><i class="bi bi-chevron-double-up"></i></a>
+</body>
+
+</html>
